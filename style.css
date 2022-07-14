@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 93.75%;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open sans';
+    background-image: url('./images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.illustration{
+    width: 110%;
+}
+
+.logo{
+    width: 10rem;
+    margin-bottom: 4rem;
+}
+
+.box1{
+    padding: 4rem;
+    width: 50%;
+    height: 100%;
+}
+
+.box2{
+    width: 50%;
+    padding: 7.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+.text{
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 25px;
+}
+
+button{
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    background-color: white;
+    color:  hsl(300, 69%, 71%);
+    border: none;
+    box-shadow: 0 2.5px 1px #212121;
+    width: 12rem;
+    margin-top: 0.5rem;
+}
+
+button:hover{
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.icons{
+    position: absolute;
+    right: 20%;
+    bottom: 5%;
+    display: flex;
+    gap: 1rem;
+}
+
+.icon{
+    color: white;
+    font-size: 0.8rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+
+
+.icon:hover{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 850px) {
+    body{
+        background-image: url('./images/bg-mobile.svg');
+    }
+    .box1{
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+    .illustration{
+        width: 100%;
+    }
+    .logo{
+        width: 5rem;
+    }
+
+    .box2{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: start;
+        padding: 2rem;
+    }
+
+    .heading,.text{
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .heading{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .icons{
+        position: initial;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+}
